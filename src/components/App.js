@@ -20,7 +20,7 @@ class App extends Component {
       serverResponseTime: 0,
       currentPage: 1,
       startIndex: 0,
-      maxResult: 10,
+      maxResult: 15,
       postPerPage: 15
     };
   }
