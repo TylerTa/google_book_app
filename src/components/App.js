@@ -110,13 +110,6 @@ class App extends Component {
       .then(data => {
         this.setState({ books: [...data.items] });
         this.setState({ totalResult: data.totalItems });
-        this.setState({
-          earlestPublication:
-            data.items[data.items.length - 1].volumeInfo.publishedDate
-        });
-        this.setState({
-          recentPublication: data.items[0].volumeInfo.publishedDate
-        });
         this.setState({ currentPage: pageNumber });
       });
   };
